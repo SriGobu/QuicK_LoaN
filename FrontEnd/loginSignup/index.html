@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickLoan — Login &amp; Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="form-container">
+        <!-- Brand Section -->
+        <div class="brand-section">
+            <div class="brand-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h1>Quick<span class="brand-accent">Loan</span></h1>
+            <p>Fast, Secure &amp; Trusted Personal Loans</p>
+        </div>
+
+        <div class="form-wrapper">
+            <input type="radio" id="login" name="form" checked>
+            <input type="radio" id="signup" name="form">
+
+            <div class="form-header">
+                <label for="login">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Login</span>
+                </label>
+                <label for="signup">
+                    <i class="bi bi-person-plus-fill"></i>
+                    <span>Sign Up</span>
+                </label>
+                <div class="slider"></div>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="form-content">
+                <div class="form-group">
+                    <label><i class="bi bi-envelope"></i> Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-lock"></i> Password</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-lock"></i>
+                        <input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required>
+                        <i class="bi bi-eye toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>Login</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="form-content">
+                <div class="form-group">
+                    <label><i class="bi bi-person"></i> Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-person"></i>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-envelope"></i> Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-lock"></i> Password</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-lock"></i>
+                        <input id="signup-password" type="password" placeholder="At least 8 characters" required>
+                        <i class="bi bi-eye toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="bi bi-shield-lock"></i> Confirm Password</label>
+                    <div class="input-wrapper">
+                        <i class="bi bi-shield-lock"></i>
+                        <input id="signup-confirm-password" type="password" placeholder="Confirm password" required>
+                    </div>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>Create Account</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </form>
+
+            <!-- Social Login -->
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-buttons">
+                    <button type="button" class="social-btn google" title="Google">
+                        <i class="bi bi-google"></i>
+                    </button>
+                    <button type="button" class="social-btn github" title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </button>
+                    <button type="button" class="social-btn linkedin" title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="form-footer">
+            <a href="#">Forgot Password?</a>
+            <span>&bull;</span>
+            <a href="#">Need Help?</a>
+        </div>
+    </div>
+
+    <script src="../config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
