@@ -1,9 +1,9 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/",        "dest": "FrontEnd/loginSignup/index.html" },
-    { "src": "/login",   "dest": "FrontEnd/loginSignup/index.html" },
-    { "src": "/landing", "dest": "FrontEnd/landingPage/landingPage.html" },
+    { "src": "/",        "dest": "/FrontEnd/loginSignup/index.html" },
+    { "src": "/login",   "dest": "/FrontEnd/loginSignup/index.html" },
+    { "src": "/landing", "dest": "/FrontEnd/landingPage/landingPage.html" },
     { "src": "/(.*)",    "dest": "/$1" }
   ]
 }
