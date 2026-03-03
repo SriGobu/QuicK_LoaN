@@ -28,7 +28,7 @@ function saveSession(token, user) {
 
 // ── REDIRECT TO LANDING PAGE ─────────────────────────────────────────────────
 function goToLanding() {
-    window.location.href = '../landingPage/landingPage.html';
+    window.location.href = '/landing';
 }
 
 // ── DISABLE / ENABLE BUTTON ──────────────────────────────────────────────────
