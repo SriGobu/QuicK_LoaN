@@ -18,7 +18,7 @@ togglePasswordButtons.forEach(button => {
 });
 
 // ── API BASE URL ─────────────────────────────────────────────────────────────
-const API_BASE = (window.APP_CONFIG?.API_BASE ?? 'http://localhost:5000') + '/api/auth';
+const API_BASE = window.APP_CONFIG.API_BASE + '/api/auth';
 
 // ── SAVE SESSION ─────────────────────────────────────────────────────────────
 function saveSession(token, user) {

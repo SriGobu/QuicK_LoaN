@@ -216,7 +216,7 @@
         }
 
         try {
-            const res  = await fetch((window.APP_CONFIG?.API_BASE ?? 'http://localhost:5000') + '/api/loan/apply', {
+            const res  = await fetch(window.APP_CONFIG.API_BASE + '/api/loan/apply', {
                 method:  'POST',
                 mode: 'cors',
                 headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
@@ -817,7 +817,7 @@ async function payEMI(loanId, amount) {
     const token = localStorage.getItem('ql_token');
     if (!token) { showLandingToast('Please log in to make a payment.', 'warn'); return; }
     try {
-        const res = await fetch(`${window.APP_CONFIG?.API_BASE ?? 'http://localhost:5000'}/api/loan/${loanId}/pay`, {
+        const res = await fetch(`${window.APP_CONFIG.API_BASE}/api/loan/${loanId}/pay`, {
             method: 'POST',
             mode: 'cors',
             headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
@@ -888,7 +888,7 @@ async function openHistoryModal() {
     // Fetch history
     let history = [];
     try {
-        const res  = await fetch((window.APP_CONFIG?.API_BASE ?? 'http://localhost:5000') + '/api/loan/my/history', { 
+        const res  = await fetch(window.APP_CONFIG.API_BASE + '/api/loan/my/history', { 
             mode: 'cors',
             headers: { 'Authorization': `Bearer ${token}` } 
         });
@@ -1056,7 +1056,7 @@ async function openHistoryModal() {
                 renderHomeLoansSection([]);
                 return;
             }
-            fetch((window.APP_CONFIG?.API_BASE ?? 'http://localhost:5000') + '/api/loan/my', {
+            fetch(window.APP_CONFIG.API_BASE + '/api/loan/my', {
                 mode: 'cors',
                 headers: { 'Authorization': `Bearer ${token}` }
             })
